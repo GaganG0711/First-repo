@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <style>
+            /* Hide submenus by default */
+            nav ul .submenu {
+            display: none;
+            list-style-type: none;
+            padding-left: 20px;
+            }
+
+            /* Show submenu when hovering over the parent item */
+            nav ul li:hover .submenu {
+            display: block;
+            }
+
+            /* Optional styling */
+            button {
+            background: none;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            }
+
+            a {
+            text-decoration: none;
+            }
+        </style>
+        <script src="../JQuery/jquery-3.6.1.min.js">
+            document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function() {
+                const submenu = this.nextElementSibling;
+                submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+
+        </script>
+
+    </head>
+    <body>
+        <nav>
+            <ul>
+              <li>
+                <button>File</button>
+                <ul class="submenu">
+                  <li><a href="#">New</a></li>
+                  <li><a href="#">Open</a></li>
+                  <li><a href="#">Save</a></li>
+                </ul>
+              </li>
+              <li>
+                <button>Edit</button>
+                <ul class="submenu">
+                  <li><a href="#">Undo</a></li>
+                  <li><a href="#">Redo</a></li>
+                  <li><a href="#">Cut</a></li>
+                </ul>
+              </li>
+              <li>
+                <button>Home</button>
+                <ul class="submenu">
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Settings</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>          
+    </body>
+</html>

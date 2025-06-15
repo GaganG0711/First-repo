@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src="./jquery-3.6.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("p").mouseenter(function(){
+                    $("p").css("color","red")
+                    $("p").css("font-size","large")
+                })
+                $("p").mouseleave(function(){
+                    $("p").css("color","blue")
+                    $("p").css("font-size","larger")
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <p width="100px" hight="80px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti saepe, vitae architecto, alias qui laborum sit incidunt quis consequatur repellendus, voluptatem adipisci molestiae aperiam repellat iusto soluta perferendis veniam. Enim.</p>
+    </body>
+</html>

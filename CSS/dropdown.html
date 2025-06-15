@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <style>
+            .btn{
+                background-color: burlywood;
+                font-size: 20px;
+                width: 102px;
+                color: blue;
+                border: 1px solid black;
+                cursor: grabbing;
+            }
+            .cnt{
+                display: none;
+                position: absolute;
+                font-size: 20px;
+                width: 100px;
+                border: 1px solid black;
+            }
+            .cnt a{
+                text-decoration: none;
+                padding: 5px;
+                text-align: center;
+                display: block;  
+                border: 1px solid grey;            
+            }
+            .dropdown:hover .cnt{
+                display: block;
+            }
+            .cnt a:hover{
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="dropdown">
+            <button class="btn">Hover Here!</button>
+            <div class="cnt">
+                <a href="">CSK</a>
+                <a href="">CSK</a>
+                <a href="">CSK</a>
+                <a href="">CSK</a>
+                <a href="">CSK</a>
+            </div>
+        </div>
+    </body>
+</html>

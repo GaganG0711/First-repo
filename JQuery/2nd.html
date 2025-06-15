@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script src="./jquery-3.6.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#b1").click(hideall);
+                $("#b2").click(showall);
+            });
+
+            function hideall(){
+                $("p").hide();
+            }
+            function showall(){
+                $("p").show();
+            }
+        </script>
+    </head>
+    <body>
+        <button id="b1">HIDE ALL</button> <button id="b2">SHOW ALL</button>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, perspiciatis!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, perspiciatis!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, perspiciatis!</p>
+    </body>
+</html>

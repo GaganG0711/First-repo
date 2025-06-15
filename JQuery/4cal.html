@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script src="./jquery-3.6.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    var one = parseInt($("#n1").val());
+                    var two = parseInt($("#n2").val());
+                    var sum = one + two;
+                    $("#n3").val(sum);
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <input type="number" id="n1"/>&ensp;&ensp;<input type="number" id="n2" />&ensp;&ensp;<button>SUM</button>&ensp;&ensp;<input type="number" id="n3"/>
+    </body>
+</html>

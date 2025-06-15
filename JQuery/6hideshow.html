@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <style>
+            p,button{
+                background-color: powderblue;
+                color:blue;
+                font-size: 20px;
+            }
+        </style>
+        <script src="./jquery-3.6.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                    $("#b1").click(function(){
+                        // $("p").show();
+                        // $("p").show(5000);
+                        // $("p").slideDown();
+                        // $("p").slideDown(3000);
+                        $("p").fadeIn();
+                        // $("p").fadeIn(3000);
+                    });
+
+                    $("#b2").click(function(){
+                        // $("p").hide();
+                        // $("p").hide(5000);
+                        // $("p").slideUp();
+                        // $("p").slideUp(5000);
+                        $("p").fadeOut();
+                        // $("p").fadeOut(5000);
+                    });
+
+                    $("#b3").click(function(){
+                        // $("p").toggle();
+                        // $("p").toggle(3000);
+                        $("p").slideToggle(250);
+                        // $("p").fadeToggle(2000);
+                    });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="b1">Show</button>&nbsp; &nbsp;<button id="b2">Hide</button>&nbsp; &nbsp;<button id="b3">Toggle</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, culpa corporis consectetur accusantium, libero beatae cupiditate tempora aut eos ipsum voluptatibus consequatur animi fuga obcaecati corrupti, quidem ut laboriosam sed.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam eum quo, molestias quod, voluptas accusamus at nihil a eius repudiandae facilis soluta hic inventore ullam numquam architecto dolorum nam?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum incidunt omnis voluptatem similique earum eos est iusto labore, porro sapiente voluptatibus dignissimos corrupti distinctio molestiae ipsam, magni odit adipisci exercitationem?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem error corporis quis distinctio obcaecati veniam sint delectus eveniet doloremque aspernatur, officiis non vel qui laborum officia blanditiis fugit nemo perferendis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquid, repudiandae illum labore obcaecati, tenetur provident autem alias qui recusandae quo dolores fuga quis inventore reiciendis saepe reprehenderit rerum ea?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quia, est beatae, doloribus aliquid voluptatem tenetur nam inventore sint natus omnis dolorum rerum, iure quos mollitia reprehenderit deserunt dolor vel?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, deserunt sit. Provident vel nesciunt veniam sapiente, sit tempora mollitia! Neque sunt dolorum repudiandae, voluptatem corrupti perspiciatis praesentium quibusdam aperiam? Quo!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quo consequuntur ducimus sequi? Facere quidem consequuntur asperiores debitis tenetur magnam maxime? Maiores ex architecto natus repellendus inventore a nulla saepe!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatem amet repellat provident iure aperiam, ullam commodi, quas nobis totam aut! Obcaecati eaque tempore nam quo magni libero assumenda excepturi.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nulla excepturi veritatis! Facere quia saepe amet veritatis? Quam, numquam, eius exercitationem adipisci explicabo recusandae provident suscipit atque cum harum laborum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eligendi iure ratione! Perspiciatis aliquid nesciunt doloribus natus vero ipsam eum! Eum hic quam sed. A cumque accusantium deserunt recusandae dolorem!;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis excepturi vel architecto facere atque rerum molestiae eaque tempora alias reprehenderit! Sint impedit eius doloribus labore dolore molestiae numquam earum incidunt?
+        </p>
+    </body>
+</html>

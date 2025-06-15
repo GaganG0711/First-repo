@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box; /* Include padding and border in width */
+            }
+
+            /* Main menu styles */
+            ul {
+                background-color: lightgrey;
+                width: 100%;
+                font-size: 20px;
+                list-style: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                display: flex;
+            }
+
+            li {
+                position: relative;
+                flex: 0 1 auto; /* Makes sure each li takes up equal width */
+                min-width: 80px;
+            }
+
+            li a {
+                text-decoration: none;
+                display: block;
+                text-align: center;
+                padding: 10px;
+            }
+
+            li a:hover {
+                background-color: chartreuse;
+                transition: 0.3s;
+            }
+
+            /* Dropdown menu styles */
+            .cnt {
+                display: none;
+                border: 1px solid rgb(223, 222, 222);
+                position: absolute;
+                top: 100%; /* Place below the main item */
+                left: 0;
+                background-color: white;
+                width: 100%; /* Match the parent li width */
+            }
+
+            .cnt a {
+                text-decoration: none;
+                display: block;
+                text-align: center;
+                padding: 5px;
+            }
+
+            .dropdown:hover .cnt,
+            .dropdown2:hover .cnt {
+                display: block;
+            }
+
+            .cnt a:hover {
+                background-color: aquamarine;
+                transition: 0.2s;
+            }
+            
+            .middle-gap {
+                flex-grow: 1;
+            }
+
+           
+        </style>
+    </head>
+    <body>
+        <!-- Unified menu container -->
+        <ul>
+            <li class="dropdown"><a href="">File</a>
+                <div class="cnt">
+                    <a href="">Select</a>
+                    <a href="">Save</a>
+                    <a href="">Open</a>
+                    <a href="">Close</a>
+                </div>
+            </li>
+            <li class="dropdown"><a href="">Save</a>
+                <div class="cnt">
+                    <a href="">Select</a>
+                    <a href="">Save</a>
+                    <a href="">Open</a>
+                    <a href="">Close</a>
+                </div>
+            </li>
+            <li class="dropdown"><a href="">Home</a>
+                <div class="cnt">
+                    <a href="">Select</a>
+                    <a href="">Select All</a>
+                    <a href="">Open</a>
+                    <a href="">Close</a>
+                </div>
+            </li>
+            <li class="dropdown"><a href="">Exit</a>
+                <div class="cnt">
+                    <a href="">Select</a>
+                    <a href="">Select All</a>
+                    <a href="">Open</a>
+                    <a href="">Close</a>
+                </div>
+            </li>
+
+            <!-- Middle gap to center the login/logout menu -->
+            <div class="middle-gap"></div>
+
+            <!-- Login/Logout menu -->
+            <li class="dropdown2"><a href="">Login</a>
+                <div class="cnt">
+                    <a href="">Select</a>
+                    <a href="">Select All</a>
+                    <a href="">Open</a>
+                    <a href="">Close</a>
+                </div>
+            </li>
+            <li class="dropdown2"><a href="">Logout</a>
+                <div class="cnt">
+                    <a href="">Select</a>
+                    <a href="">Select All</a>
+                    <a href="">Open</a>
+                    <a href="">Close</a>
+                </div>
+            </li>
+        </ul>
+    </body>
+</html>

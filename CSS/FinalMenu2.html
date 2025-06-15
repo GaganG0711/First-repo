@@ -1,0 +1,100 @@
+<html>
+    <head>
+        
+        <style>
+            /* Main Navigation Bar */
+            ul {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                top: 0px;
+                left: 0px;
+                /* background: linear-gradient(to right, yellow, red, yellow); */
+            }
+        
+            li {
+                position: relative; /* Required for the dropdown to position relative to `li` */
+                flex: 1; /* Equal space for all top-level items */
+            }
+        
+            li a {
+                text-decoration: none;
+                padding: 10px;
+                display: block;
+                text-align: center;
+                background: lightgray;
+                transition: background-color .3s;
+            }
+        
+            li a:hover {
+                background-color: chartreuse;
+            }
+        
+            /* Dropdown Menu */
+            .cnt {
+                display: none; /* Initially hidden */
+                position: absolute;
+                top: 100%; /* Position below the main menu item */
+                left: 0;
+                width: 100%; /* Match the width of the parent `li` */
+                background: white;
+            }
+        
+            .cnt a {
+                text-decoration: none;
+                padding: 10px;
+                display: block;
+                text-align: center;
+                background: white;
+            }
+        
+            .cnt a:hover {
+                background-color: aquamarine;
+            }
+        
+            /* Show Dropdown on Hover */
+            .dropdown:hover .cnt {
+                display: block;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <ul>
+            <li class="dropdown"><a href="">File</a>
+                <div class="cnt">
+                    <a href="">Select</a>
+                    <a href="">Save</a>
+                    <a href="">Open</a>
+                    <a href="">Close</a>
+                </div>
+            </li>
+            <li class="dropdown"><a href="">Save</a>
+                <div class="cnt">
+                    <a href="">Select</a>
+                    <a href="">Save</a>
+                    <a href="">Open</a>
+                    <a href="">Close</a>
+                </div>
+            </li>
+            <li class="dropdown"><a href="">Home</a>
+                <div class="cnt">
+                    <a href="">Select</a>
+                    <a href="">Select All</a>
+                    <a href="">Open</a>
+                    <a href="">Close</a>
+                </div>
+            </li>
+            <li class="dropdown"><a href="">Exit</a>
+                <div class="cnt">
+                    <a href="">Select</a>
+                    <a href="">Select All</a>
+                    <a href="">Open</a>
+                    <a href="">Close</a>
+                </div>
+            </li>
+
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(255, 189, 200);
+    color: darkred;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+}

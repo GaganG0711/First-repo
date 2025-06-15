@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+            .mycls{
+                color: teal;
+                background-color: bisque;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 30px;
+                font-style: italic;
+            }
+        </style>
+        <script src="./jquery-3.6.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#b1").click(function(){
+                    $("p").addClass("mycls")
+                });
+                $("#b2").click(function(){
+                    $("p").removeClass("mycls")
+                });
+                $("#b3").click(function(){
+                    $("p").toggleClass("mycls")
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <button id="b1">Add Changes</button>&nbsp;&nbsp;<button id="b2">Remove Changes</button>&nbsp;&nbsp;<button id="b3">Opposite</button>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed explicabo in maiores itaque harum voluptatem eos eum natus, minus ipsa blanditiis officiis dolorum nam enim illo aut minima atque ut.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae quaerat in cum cupiditate voluptate et deserunt eligendi autem. Doloremque repellendus ea voluptas quidem et ducimus eos, sint itaque accusantium? Ratione?</p>
+    </body>
+</html>
