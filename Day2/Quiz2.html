@@ -14,8 +14,9 @@
 <body>
     <div class="audio-video">
         <h1>Audio</h1>
-        <h2>Categories</h2>
         <div class="category">
+            <h2>Categories</h2>
+
             <h3>Songs</h3>
             <div class="category-list">
                 <audio src="THE_BANJO_BEAT_-_RICKY_DESKTOP(128k).mp3" controls></audio>
@@ -24,6 +25,7 @@
                 <audio src="THE_BANJO_BEAT_-_RICKY_DESKTOP(128k).mp3" controls></audio>
                 <audio src="THE_BANJO_BEAT_-_RICKY_DESKTOP(128k).mp3" controls></audio>
             </div>
+
             <h3>Ringtone</h3>
             <div class="category-list">
                 <audio src="THE_BANJO_BEAT_-_RICKY_DESKTOP(128k).mp3" controls></audio>
@@ -36,9 +38,10 @@
     </div>
     <div class="audio-video">
         <h1>Video's</h1>
-        <h2>Categories</h2>
         <div class="category">
-            <h3>Songs</h3>
+            <h2>Categories</h2>
+
+            <h2>Songs</h2>
             <div class="category-list">
                 <iframe src="https://www.youtube.com/embed/JgDNFQ2RaLQ?si=0q0SONEcErpkMAjY" title="YouTube video player"
                     frameborder="0"
@@ -60,8 +63,8 @@
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
             </div>
+
             <h3>education</h3>
             <div class="category-list">
                 <iframe src="https://www.youtube.com/embed/7kZcuCQcWbQ?si=MKPmxenRR2BMJnU8" title="YouTube video player"
@@ -93,6 +96,7 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
+
             <h3>Entertainment</h3>
             <div class="category-list">
                 <iframe src="https://www.youtube.com/embed/weBF4FlOsXg?si=ljNhqJuOdQ0s-9fO" title="YouTube video player"
@@ -129,14 +133,17 @@
 
 
 
-    <style>
+    <!-- <style>
         body {
             background-color: rgb(81, 69, 54);
+            margin: 0;
+            padding: auto;
         }
         iframe {
-            width: 400px;
-            height: 250px;
+            width: 200px;
+            aspect-ratio: 16/9;
             border-radius: 10px;
+            flex: 2 1 100px;
         }
         .audio-video {
             border: 2px solid black;
@@ -146,6 +153,7 @@
         }
         .category-list {
             border: 2px solid aqua;
+            margin: 2px;
         }
         div {
             padding: 3px;
@@ -154,50 +162,66 @@
             iframe {
                 width: 100%;
                 border-radius: 10px;
-                max-width: 720px;
                 aspect-ratio: 16 / 9;
                 border: none;
-                flex: 1 2 150px;
+                flex: 0 1 100px;
             }
         }
-    </style>
+    </style> -->
 
-    <!-- <style>
+
+    <style>
         body {
             background-color: rgb(81, 69, 54);
             margin: 0;
             padding: 0;
         }
 
-        /* Container for all iframes or video/audio blocks */
         .audio-video {
-            display: flex;
-            flex-wrap: wrap;
-            /* Allows wrapping to next line */
-            gap: 10px;
-            /* Optional: space between items */
-            justify-content: center;
-            /* Center items horizontally */
             border: 2px solid black;
             padding: 10px;
         }
 
-        /* Individual item style */
-        .audio-video iframe {
+        .category {
+            border: 2px solid magenta;
+        }
+
+        .category-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: flex-start;
+            border: 2px solid aqua;
+            margin: 2px;
+        }
+
+        .category-list iframe {
             flex: 1 1 300px;
-            /* Allow to grow/shrink around 300px base */
+            /* Let iframe grow and shrink */
             aspect-ratio: 16 / 9;
-            max-width: 100%;
+            /* Maintain correct video ratio */
+            width: 100%;
+            /* Allow flexible width inside flexbox */
+            max-width: 500px;
+            /* prevent becoming too large */
+            border-radius: 10px;
             border: none;
         }
 
-        /* Optional: Responsive tweaks */
+        /* Mobile responsiveness */
         @media (max-width: 720px) {
-            .audio-video iframe {
-                flex: 1 1 100%;
+            .category-list {
+                flex-direction: column;
+                /* Stack iframes vertically */
+                align-items: center;
+            }
+
+            .category-list iframe {
+                max-width: 100%;
             }
         }
-    </style> -->
+    </style>
+
 </body>
 
 </html>
