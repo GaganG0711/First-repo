@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* example of Element selector */
+        div{
+            background-color: aquamarine;
+        }
+        /* example of class selector */
+        .red{
+            background-color: yellow;
+        }
+        /* example of id selector */
+        #green{
+            background-color: green;
+        }
+        /* Child selector example */
+        .yellow > p {
+            background-color: burlywood;
+        }
+        /* Desendent Selector */
+        div p {
+            background-color: cadetblue;
+        }
+        /* universal selector */
+        *{
+            margin: 10px;
+            padding: 5px;
+        }
+        /* psuedo selector */
+        a:visited{
+            color: red;
+        }
+        a:link{
+            color: blue;
+        }
+        a:active{
+            background-color: bisque;
+        }
+        a:hover{
+            font-size: larger;
+        }
+
+        p:first-child{
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Element Selectors
+    </div>
+    <div class="yellow">
+        Class Selectors
+        <p>Child selector</p>
+    </div>
+    <div id="green">
+        Id Selectors
+        <span>
+            <p>Desendent Selector</p>
+        </span>
+    </div>
+    <div>
+        <a href="https://www.google.com">GOOGlE</a>
+    </div>
+    <div>
+        <main class="one">
+            <p>psuedo one para</p>
+            <p>psuedo second para</p>
+        </main>
+    </div>
+    
+</body>
+</html>
