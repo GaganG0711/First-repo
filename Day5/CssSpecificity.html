@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Specificity</title>
+    <style>
+        /* (0, 1, 0, 0) is more powerful than (0, 0, 999, 999) */
+        h1{
+            color: rgb(59, 108, 92);
+        }
+
+        .gray.green.pink{
+            color: gray;
+        }
+        .cyan.black [data=1]{
+            color: cyan;
+        }
+        h1.blue.gray.cyan.yellow.green.black.pink.magenta.lightgray.brown{
+            color: blue;
+        }
+        .yellow.megenta.lightgray.brown{
+            color: yellow;
+        }
+        h1.yellow{
+            color: yellowgreen !important;
+        }
+        #purple{
+            color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="gray cyan blue yellow green black pink magenta lightgray brown"  id="purple" data="1">Lorem ipsum dolor sit amet.</h1>
+</body>
+</html>

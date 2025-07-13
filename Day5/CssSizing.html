@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+        }
+        html{
+            font-size: 12px;
+        }
+
+        .box {
+            border: 2px solid black;
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            font-size: 2rem;
+        }
+
+        .container {
+            border: 2px solid black;
+            width: 80vw;
+            /* height: 80vh; */
+            margin: 10px auto;
+            min-height: 80vh;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            font-size: 10px;
+        }
+
+        .container > div {
+            font-size: 2em;
+            border: 2px solid black;
+            width: 50%;
+        }
+
+        .container > div > div{
+            border: 2px solid black;
+            width: 50%;
+        }
+
+        .cnt{
+            background-color: aquamarine;
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 0px auto;
+            font-size: 22px;
+            width: 80vmax;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Division Box
+    </div>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit illo aliquam obcaecati illum repellendus
+            sit
+            repellat, amet, cupiditate, vitae ut numquam quasi repudiandae laboriosam officia voluptatum! Asperiores
+            laboriosam aut quasi magni quisquam, ipsam autem ducimus voluptatum? Temporibus atque in sapiente maxime
+            sint
+            necessitatibus, culpa nam provident officiis ducimus soluta omnis aspernatur porro quidem sunt, commodi
+            autem
+            natus.
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vitae eum beatae nostrum officiis asperiores, fugiat sit. Nesciunt illo excepturi enim nam blanditiis?
+            </div>
+        </div>
+        <!-- <p>lorem999</p> -->
+    </div>
+    <div class="cnt">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, eveniet.
+    </div>
+</body>
+
+</html>

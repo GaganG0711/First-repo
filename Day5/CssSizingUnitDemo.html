@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Unit Comparison (Value: 2)</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .unit-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background: #81ecec;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 14px;
+      color: #2d3436;
+      box-sizing: border-box;
+      padding: 5px;
+    }
+
+    /* Units applied to border-width */
+    .px     { border: 2px solid #2d3436; }
+    .em     { font-size: 16px; border: 2em solid #2d3436; }
+    .rem    { border: 2rem solid #2d3436; }
+    .percent{ border: 2% solid #2d3436; }
+    .vw     { border: 2vw solid #2d3436; }
+    .vh     { border: 2vh solid #2d3436; }
+    .vmin   { border: 2vmin solid #2d3436; }
+    .vmax   { border: 2vmax solid #2d3436; }
+    .ex     { font-size: 16px; border: 2ex solid #2d3436; }
+    .ch     { font-size: 16px; border: 2ch solid #2d3436; }
+    .cm     { border: 2cm solid #2d3436; }
+    .mm     { border: 2mm solid #2d3436; }
+    .in     { border: 2in solid #2d3436; }
+    .pt     { border: 2pt solid #2d3436; }
+    .pc     { border: 2pc solid #2d3436; }
+
+    /* Units not valid on border-width — shown with text or width instead */
+    .text-example {
+      height: auto;
+      width: auto;
+      border: none;
+      background: #fab1a0;
+    }
+
+    .font-em   { font-size: 2em; }
+    .font-rem  { font-size: 2rem; }
+    .font-ex   { font-size: 2ex; }
+    .font-ch   { font-size: 2ch; }
+    .font-px   { font-size: 2px; }
+    .font-pt   { font-size: 2pt; }
+    .font-mm   { font-size: 2mm; }
+    .font-cm   { font-size: 2cm; }
+    .font-in   { font-size: 2in; }
+
+  </style>
+</head>
+<body>
+
+  <h1>CSS Units Comparison with Value 2</h1>
+
+  <h2>Applied to <code>border-width: 2unit</code></h2>
+  <div class="unit-group">
+    <div class="box px">2px</div>
+    <div class="box em">2em</div>
+    <div class="box rem">2rem</div>
+    <div class="box percent">2%</div>
+    <div class="box vw">2vw</div>
+    <div class="box vh">2vh</div>
+    <div class="box vmin">2vmin</div>
+    <div class="box vmax">2vmax</div>
+    <div class="box ex">2ex</div>
+    <div class="box ch">2ch</div>
+    <div class="box cm">2cm</div>
+    <div class="box mm">2mm</div>
+    <div class="box in">2in</div>
+    <div class="box pt">2pt</div>
+    <div class="box pc">2pc</div>
+  </div>
+
+  <h2>Applied to <code>font-size: 2unit</code></h2>
+  <div class="unit-group">
+    <div class="box text-example font-em">2em text</div>
+    <div class="box text-example font-rem">2rem text</div>
+    <div class="box text-example font-ex">2ex text</div>
+    <div class="box text-example font-ch">2ch text</div>
+    <div class="box text-example font-px">2px text</div>
+    <div class="box text-example font-pt">2pt text</div>
+    <div class="box text-example font-mm">2mm text</div>
+    <div class="box text-example font-cm">2cm text</div>
+    <div class="box text-example font-in">2in text</div>
+  </div>
+</body>
+</html>
