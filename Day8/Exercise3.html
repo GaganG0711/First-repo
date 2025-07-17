@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Png</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: poppins;
+            font-size: 1vw;
+        }
+
+        body {
+            background-color: #000000c3;
+        }
+
+        .outer {
+            margin: 0 auto;
+            width: 30vw;
+            border: 1px solid black;
+            padding: 20px 20px;
+            background-color: rgb(209, 223, 240);
+        }
+
+        .inner {
+            border: 1px solid rgb(255, 255, 255);
+            background-color: white;
+            border-radius: 10px;
+            margin: 0 auto;
+            width: 26vw;
+        }
+
+        img {
+            width: 25vw;
+            height: 20vw;
+            display: block;
+            margin: 0 auto;
+            margin-top: 1vh;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .caption {
+            margin: 20px 15px;
+        }
+
+        .caption p {
+            color: #000000c3;
+            display: inline;
+            border: 1px solid #0000003a;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        h1 {
+            margin: 20px 15px;
+            padding: 0px 5px;
+        }
+
+        .description {
+            margin: 10px 15px;
+            text-align: justify;
+        }
+
+        .readmd {
+            justify-self: center;
+            display: flex;
+            padding: 5px 10px;
+            margin: 15px 10px;
+            border-width: 0cap;
+            border-radius: 10px;
+            background-color: rgb(188, 207, 230);
+            color: blue;
+        }
+
+        .readmd:hover {
+            cursor: pointer;
+            background-color: rgb(159, 180, 206);
+            transition: 0.6s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Information Card</h1>
+    <div class="outer">
+        <div class="inner">
+            <img src="https://imgs.search.brave.com/zDGBGPAgh-BUjr6rpYhgwg4qjNvgzvp-RnHn8e-5Ll8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mYW1p/bHlkZXN0aW5hdGlv/bnNndWlkZS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjUv/MDEvMS4tVGhpcy1M/ZWdlbmRhcnktTGln/aHRob3VzZS1Jbi1N/YWluZS1Mb29rcy1M/aWtlLUl0cy1TdHJh/aWdodC1PdXQtT2Yt/QS1OYXV0aWNhbC1B/ZHZlbnR1cmUtRmls/bS5qcGcud2VicA"
+                alt="">
+            <div class="caption">
+                <p>Lighthouse</p>
+                <p>Sea Shore</p>
+            </div>
+            <h1>Light-House</h1>
+            <p class="description">Prepare to set sail on a journey to a place where the waves crash, the gulls cry, and
+                the lighthouse stands tall like a beacon of maritime history.
+                Pemaquid Point Lighthouse stands sentinel, its white tower a beacon of hope against the azure Maine sky.
+                Photo credit: Omar Saleem
+            </p>
+            <button class="readmd" onclick="window.open('https://familydestinationsguide.com/enchanting-legendary-lighthouse-maine/')">
+                Read More
+            </button>
+
+        </div>
+    </div>
+</body>
+
+</html>
