@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --color: rgb(65, 187, 236);
+            --seccolor: rgb(0, 157, 255);
+            --padding: 20px;
+            --navopacity: 0.7;
+            --text: "go to google";
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav {
+            background-color: var(--color);
+            color: red;
+            opacity: var(--navopacity);
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+            padding: var(--padding);
+            border: 2px solid var(--seccolor);
+        }
+
+        ul li:first-child {
+            /* if the variable is not found then we can add second option*/
+            background-color: var(--bgcolor, lightgreen);
+        }
+
+        .container {
+            padding: var(--padding);
+            /* Local variable with same name as global variable */
+            --seccolor: rgb(138, 255, 87);
+            background-color: var(--seccolor);
+        }
+
+        a::before {
+            content: var(--text);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum neque asperiores pariatur est consequuntur,
+        praesentium fugiat voluptate, placeat enim voluptatum veniam libero rem harum sapiente cum. Odio at nam ipsam
+        dignissimos temporibus a molestiae quam debitis dolor officiis, rerum dolore sapiente mollitia ipsum accusamus
+        cupiditate accusantium impedit alias. Velit eius et laborum soluta doloribus neque numquam?
+    </div>
+    <div class="container">
+        <a href="https://www.google.com"></a>
+    </div>
+</body>
+
+</html>

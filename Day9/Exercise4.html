@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise4</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins&display=swap');
+
+        *{
+            font-family: 'poppins';
+        }
+    </style>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: x-large;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bgcolor: rgba(46, 138, 7, 0.726);
+            --secbgcolor: rgb(203, 233, 167);
+            --color: white;
+            --hoverbg: limegreen;
+            --hovercolor: rgb(254, 254, 254);
+        }
+
+        body{
+            background-color: var(--secbgcolor);
+        }
+
+        .nav ul {
+            display: flex;
+            list-style: none;
+            background-color: var(--bgcolor);
+            color: var(--color);
+        }
+
+        ul li {
+            padding: 5px 10px 5px 10px;
+        }
+
+        li:hover {
+            background-color: var(--hoverbg);
+            color: var(--hovercolor);
+            transition: 0.4s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Menu</li>
+            <li>About</li>
+            <li>Contect</li>
+        </ul>
+    </div>
+</body>
+
+</html>

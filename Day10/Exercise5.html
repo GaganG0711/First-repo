@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+    </style>
+    <style>
+        :root {
+            --bgcolor: rgb(187, 91, 47);
+            --secbgcolor: rgb(135, 80, 57);
+            --contbgcolor: rgb(44, 48, 51);
+            --bgcolorsec: rgba(144, 238, 144, 0.062);
+            --color: white;
+            --border: black;
+            --textarea: rgb(81, 77, 77);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: 'poppins';
+            color: var(--color);
+            box-sizing: border-box;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+        }
+
+        .navbar {
+            background-color: var(--bgcolor);
+            display: flex;
+            border: 1px solid var(--border);
+            width: 100;
+        }
+
+        .navbar ul {
+            display: flex;
+        }
+
+        ul li {
+            border: 1px solid var(--bgcolor);
+            padding: 15px 30px;
+            background-color: var(--secbgcolor)
+        }
+
+        a,
+        li {
+            list-style: none;
+            text-decoration: none;
+        }
+
+
+
+        .content {
+            background-color: var(--contbgcolor);
+        }
+
+        .content .boxes {
+            display: flex;
+            justify-content: center;
+        }
+
+        .boxes>.box1,
+        .box2 {
+            border: 1px solid var(--border);
+            margin: 50px;
+            padding: 10px;
+            width: 40vw;
+            height: 70vh;
+            background-color: var(--bgcolorsec);
+        }
+
+        @media only screen and (max-width: 600px) {
+            .boxes {
+                flex-direction: column;
+            }
+        }
+
+
+
+        section {
+            background-color: var(--bgcolorsec);
+        }
+
+        section .textsec {
+            width: 85vw;
+            height: 30vh;
+            resize: none;
+            margin: 40px;
+            padding: 5px;
+            text-align: left;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background-color: var(--textarea);
+        }
+
+        img {
+            width: 55px;
+            right: 1px;
+            bottom: 0px;
+            position: fixed;
+            border: 2px solid lime;
+            border-radius: 50%;
+        }
+
+
+
+        .btnavbar {
+            background-color: var(--bgcolor);
+            display: flex;
+            border: 1px solid var(--border);
+            /* width: 100vw; */
+        }
+
+        .btnavbar ul {
+            display: flex;
+        }
+
+        .btnavbar ul li {
+            border: 1px solid var(--bgcolor);
+            padding: 15px 30px;
+            background-color: var(--secbgcolor);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Nav 1</a></li>
+                <li><a href="">Nav 2</a></li>
+                <li><a href="">Nav 3</a></li>
+                <li><a href="">Nav 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <article class="boxes">
+            <div class="box1">Box 1</div>
+            <div class="box2">Box 2</div>
+        </article>
+        <section>
+            <textarea name="text" class="textsec"></textarea>
+            <a href="https://www.codewithharry.com/tutorial/overview/css-introduction" target="_blank">
+            <img src="https://imgs.search.brave.com/7i2uJ9USAfE2ULqkpO3eAANp19wEFInEUFOLEiF93uA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jb2Rl/d2l0aHJvbm55LmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/NC8xMC9Db2RlV2l0/aEhhcnJ5LnBuZw"
+                alt="">
+                </a>
+        </section>
+    </main>
+    <footer>
+        <nav class="btnavbar">
+            <ul>
+                <li><a href="">Footer 1</a></li>
+                <li><a href="">Footer 2</a></li>
+                <li><a href="">Footer 3</a></li>
+                <li><a href="">Footer 4</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

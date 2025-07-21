@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightsteelblue;
+        }
+
+        .boxes {
+            display: flex;
+        }
+
+        .box {
+            background-color: lightpink;
+            width: 300px;
+            height: 300px;
+            padding: 3px;
+            margin: 3px;
+        }
+
+        @media only screen and (max-width: 455px) {
+            body {
+                background-color: lightskyblue;
+            }
+
+            .boxes {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (orientation: landscape) {
+            .box {
+                border: 5px solid purple;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .boxes:first-child{ */
+        /* .box:first-child{
+            background-color: bisque;
+        }
+        .box::first-line{
+            color: red;
+        } */
+        /* .boxes *{
+            border: 1px solid green;
+        }
+        [data-color="primary"]{
+            margin-top: 30px;
+        } */
+        .box:nth-child(odd){
+            background-color: cadetblue;
+        }
+
+        .boxes::before{
+            content: "PSEUDO ELEMENT [::before] EXAMPLE";
+        }
+        
+        .boxes::after{
+            content: "PSEUDO ELEMENT [::after] EXAMPLE";
+        }
+
+        .boxes::selection{
+            background-color: black;
+            color: rgb(255, 0, 0);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box" data-color="primary">THIS IS DIV BOX1</div>
+        <div class="box">THIS IS DIV BOX2</div>
+        <div class="box">THIS IS DIV BOX3</div>
+    </div>
+</body>
+</html>

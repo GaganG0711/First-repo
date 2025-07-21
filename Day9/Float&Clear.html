@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Float&Clear</title>
+    <style>
+        .cards{
+            border: 2px solid;
+            display: flow-root;
+        }
+        .card{
+            border: 2px solid gold;
+        }
+        .img1{
+            float: left;
+        }
+        .img2{
+            float: right;
+        }
+        .card:nth-child(4){
+            clear: right;
+            /* clear: left; */
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://www.codewithharry.com/_next/image?url=%2Fcoding%2F4.jpg&w=1080&q=75" alt="Harry Bhai" width="230px" class="img1">
+        <img src="https://www.codewithharry.com/_next/image?url=%2Fcoding%2F4.jpg&w=1080&q=75" alt="Harry Bhai" width="230px" class="img2">
+        <div class="card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero ipsam iure magni itaque? Adipisci voluptate, repellat </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptatem quaerat amet asperiores dignissimos eius, rem voluptatum, aut at exercitationem perspiciatis corporis sed consequuntur a laudantium expedita molestiae explicabo. Corrupti, tempore a laudantium dolorem quod debitis ipsam minus veritatis perspiciatis totam natus beatae ea aspernatur delectus sint neque nisi reprehenderit. Architecto, facilis magni! Facere et tempora animi est, quaerat cupiditate saepe aliquid! Modi libero laboriosam ullam repellat esse debitis harum magnam ut velit assumenda? Facilis, neque optio corporis illum architecto sint reprehenderit cumque minima cum sapiente obcaecati autem consequatur voluptatem molestias assumenda libero, error eveniet ullam eum magni perspiciatis distinctio eaque! Voluptates iure architecto minima quas! Amet cum quidem rem facere quaerat velit repellat? Officiis, architecto fuga, qui vero, delectus eveniet libero impedit corporis dolorem rerum possimus rem recusandae nostrum ipsam. Voluptatibus perferendis eligendi iusto illo, maiores quo expedita labore facere odio exercitationem sunt quisquam aperiam eius voluptatum laudantium iure consectetur atque? Nostrum sint odio tenetur fugit voluptatibus tempore, laborum ab veniam officia maxime dolores harum quo libero provident id quisquam obcaecati, rem dolorum quod voluptate praesentium? Reprehenderit velit aliquid laboriosam incidunt tempora adipisci necessitatibus repellat. Autem non vero cumque tempora voluptate aliquid dolore consequatur, nemo mollitia ipsum, tenetur inventore.</div>
+        <div class="card">card 3</div>
+    </div>
+</body>
+</html>
