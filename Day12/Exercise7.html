@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box NavBar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI'
+        }
+
+        nav {
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 0 auto; /* ✅ This centers the nav horizontally */
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            padding: 0;
+        }
+
+        ul img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .navigation li {
+            cursor: pointer;
+            padding: 8px 12px;
+        }
+
+        .button {
+            margin-left: auto;
+        }
+
+        .button button {
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        /* @media only screen and (max-width: 800px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px;
+            }
+
+            ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .button {
+                margin-left: 0;
+            }
+
+            .button button {
+                width: 100%;
+            }
+        } */
+
+
+
+        main {
+            width: 100%;
+            margin-top: 50px;
+            display: grid;
+            justify-content: space-around;
+        }
+
+        .grid-cnt {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .cnt {
+            display: grid;
+            gap: 30px;
+            width: 300px;
+            height: 150px;
+            background-color: #f9f9f9;
+            align-content: center;
+            justify-items: center;
+        }
+
+        .cnt a {
+            gap: 50px;
+            text-decoration: none;
+            padding: 8px 16px;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 6px;
+        }
+
+        .cnt .t-bit {
+            background-color: #00b6d1;
+            color: white;
+        }
+
+        .cnt .s-bit {
+            background-color: #5cb85c;
+            color: white;
+        }
+
+        @media only screen and (max-width: 1000px) {
+            .grid-cnt {
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+            }
+
+            .cnt {
+                align-content: center;
+                justify-items: center;
+            }
+
+            nav {
+                border: 1px solid black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <nav>
+            <ul class="navigation">
+                <li><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Background-2.png" alt=""></li>
+                <li class=" pad-nav">Products</li>
+                <li>Pricing</li>
+                <li>Resources</li>
+                <li>Our company</li>
+                <li class=" button"><button>BUY NOW</button></li>
+                <li>🌐 English</li>
+                <li>🔎</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="grid-cnt">
+
+            <div class="cnt">
+                <h2>English</h2>
+                <div class="btn">
+                    <a class="t-bit" href="ue_english_64.exe">Download 32-bit</a>
+                    <a class="s-bit" href="ue_english_64.exe">Download 64-bit</a>
+                </div>
+            </div>
+            <div class="cnt">
+                <h2>English</h2>
+                <div class="btn">
+                    <a class="t-bit" href="ue_english_64.exe">Download 32-bit</a>
+                    <a class="s-bit" href="ue_english_64.exe">Download 64-bit</a>
+                </div>
+            </div>
+            <div class="cnt">
+                <h2>English</h2>
+                <div class="btn">
+                    <a class="t-bit" href="ue_english_64.exe">Download 32-bit</a>
+                    <a class="s-bit" href="ue_english_64.exe">Download 64-bit</a>
+                </div>
+            </div>
+            <div class="cnt">
+                <h2>English</h2>
+                <div class="btn">
+                    <a class="t-bit" href="ue_english_64.exe">Download 32-bit</a>
+                    <a class="s-bit" href="ue_english_64.exe">Download 64-bit</a>
+                </div>
+            </div>
+            <div class="cnt">
+                <h2>English</h2>
+                <div class="btn">
+                    <a class="t-bit" href="ue_english_64.exe">Download 32-bit</a>
+                    <a class="s-bit" href="ue_english_64.exe">Download 64-bit</a>
+                </div>
+            </div>
+            <div class="cnt">
+                <h2>English</h2>
+                <div class="btn">
+                    <a class="t-bit" href="ue_english_64.exe">Download 32-bit</a>
+                    <a class="s-bit" href="ue_english_64.exe">Download 64-bit</a>
+                </div>
+            </div>
+            <div class="cnt">
+                <h2>English</h2>
+                <div class="btn">
+                    <a class="t-bit" href="ue_english_64.exe">Download 32-bit</a>
+                    <a class="s-bit" href="ue_english_64.exe">Download 64-bit</a>
+                </div>
+            </div>
+            <div class="cnt">
+                <h2>English</h2>
+                <div class="btn">
+                    <a class="t-bit" href="ue_english_64.exe">Download 32-bit</a>
+                    <a class="s-bit" href="ue_english_64.exe">Download 64-bit</a>
+                </div>
+            </div>
+            <div class="cnt">
+                <h2>English</h2>
+                <div class="btn">
+                    <a class="t-bit" href="ue_english_64.exe">Download 32-bit</a>
+                    <a class="s-bit" href="ue_english_64.exe">Download 64-bit</a>
+                </div>
+            </div>
+            <div class="cnt">
+                <h2>English</h2>
+                <div class="btn">
+                    <a class="t-bit" href="ue_english_64.exe">Download 32-bit</a>
+                    <a class="s-bit" href="ue_english_64.exe">Download 64-bit</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
