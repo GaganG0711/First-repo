@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box NavBar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI'
+        }
+
+        .container {
+            font-size: 17px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            border: 1px solid black;
+            width: 85vw;
+            height: 100px;
+        }
+
+        ul {
+            height: -webkit-fill-available;
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+        }
+
+        ul img {
+            max-width: 230px;
+            padding-left: 30px;
+        }
+
+        .navigation {
+            margin: 25px 20px;
+            justify-self: center;
+            cursor: pointer;
+        }
+
+        .pad-nav {
+            margin-left: 9%;
+        }
+
+        .button {
+            margin-left: auto;
+        }
+
+        button {
+            padding: 12px 24px;
+        }
+    </style>
+    <style>
+        .container:hover{
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: hide 0.8s ease-in-out 0s 1 forwards;
+        }   
+        @keyframes hide {
+            from{
+
+            }
+            to{
+                transform: translateY(-120px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                <li><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Background-2.png" alt=""></li>
+                <li class="navigation pad-nav">Products</li>
+                <li class="navigation">Pricing</li>
+                <li class="navigation">Resources</li>
+                <li class="navigation">Our company</li>
+                <li class="navigation button"><button>BUY NOW</button></li>
+                <li class="navigation">🌐 English</li>
+                <li class="navigation">🔎</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

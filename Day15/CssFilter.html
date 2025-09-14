@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        .cnt {
+            display: flex;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            gap: 10px;
+            /* align-content: center; */
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .content{
+            text-align: center;
+        }
+        img {
+            width: 450px;
+            object-fit: scale-down;
+        }
+
+        .img1 {
+            filter: blur(5px);
+        }
+
+        .img2 {
+            filter: brightness(100%);
+        }
+
+        .img3 {
+            filter: contrast(10%);
+        }
+
+        .img4 {
+            filter: drop-shadow(2px 4px 6px black);
+        }
+
+        .img5 {
+            filter: grayscale(1) brightness(200%) contrast(50%);
+        }
+
+        .img6 {
+            filter: hue-rotate(45deg);
+        }
+
+        .img7 {
+            filter: invert(1);
+        }
+
+        .img8 {
+            filter: opacity(0.5);
+        }
+
+        .img9 {
+            filter: saturate(0.5);
+        }
+
+        .img10 {
+            filter: sepia(1);
+            /* filter: url(); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cnt">
+        <div class="content">
+            <img class="img1"
+                src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D">
+            <p>blur</p>
+        </div>
+
+        <div class="content">
+            <img class="img2"
+                src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D">
+            <p>brightness</p>
+        </div>
+        <div class="content">
+            <img class="img3"
+                src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D">
+            <p>contrast</p>
+        </div>
+        <div class="content">
+            <img class="img4"
+                src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D">
+            <p>drop-shadow</p>
+        </div>
+        <div class="content">
+            <img class="img5"
+                src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D">
+            <p>grayscale</p>
+        </div>
+        <div class="content">
+            <img class="img6"
+                src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D">
+            <p>hue-rotate(45deg)</p>
+        </div>
+        <div class="content">
+            <img class="img7"
+                src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D">
+            <p>invert(1)</p>
+        </div>
+        <div class="content">
+            <img class="img8"
+                src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D">
+            <p>opacity</p>
+        </div>
+        <div class="content">
+            <img class="img9"
+                src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D">
+            <p>saturate</p>
+        </div>
+        <div class="content">
+            <img class="img10"
+                src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D">
+            <p>sepia</p>
+        </div>
+    </div>
+</body>
+
+</html>
