@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .dark-mode {
+            background-color: #1a1515;
+            color: white;
+            transition: background-color 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="display: flex">
+        <div class="box">this is Box block</div>
+        <div class="box">this is Box block</div>
+        <div id="box" data-anyname="divbox" hidden> this is another box block</div>
+    </div>
+    <div class="container2" style="margin-top: 20px; border: 2px solid;">
+        <div class="box2">This is Box2 Block</div>
+    </div>
+    <button id="toggleBtn"> Toggle the theme </button>
+
+    <script>
+        let division = document.createElement("div");
+        division.innerHTML = `Another div created using <b>Dom method</b>`
+        division.setAttribute("class", "newBox")
+
+        let cnt = document.querySelector(".container")
+        // 5 mehtods to add node and element
+        cnt.append(division)    // add element inside a node at the end
+        // cnt.prepend(division)    // add element inside a node at the start
+        // cnt.before(division)     // add element outside a node at the start
+        // cnt.after(division)      // add element outside a node at the end
+        // cnt.replaceWith(division)    // replce the new node with the previous one
+
+        // mehthod to add string on to a node
+        let cnt2 = document.querySelector(".container")
+        cnt2.insertAdjacentHTML("beforebegin", "<b>This is inserted HTML beforebegin<b/>")
+
+        cnt2.insertAdjacentText("afterbegin", "This is inserted String/Text afterbegin")
+
+        let para = document.createElement("p")
+        para.textContent = "this is inserted Element beforeend"
+        cnt2.insertAdjacentElement("beforeend", para)
+
+        cnt2.insertAdjacentHTML("afterend", "<b>This is inserted String afterend<b/>")
+
+        // let newPara = "this is inserded insertbefore()"
+        let newPara = document.createTextNode("this is inserded insertbefore()")
+        let ref = document.querySelector(".box")
+        cnt2.insertBefore(newPara, ref)
+
+    </script>
+
+    <script>
+        let btn = document.getElementById("toggleBtn")
+        btn.addEventListener(("click"), () => {
+            document.body.classList.toggle("dark-mode")
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

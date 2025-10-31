@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 14px;
+            margin: 14px;
+            /* border: 1px solid black; */
+        }
+        .child{
+            background-color: rgb(159, 189, 215);
+        }
+        .childContainer{
+            background-color: rgb(192, 192, 60);
+        }
+        .container{
+            background-color: rgb(127, 189, 3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="childContainer">
+            <div class="child">
+                This is Child Container
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector(".child").addEventListener("click", (e) => {
+            // e.stopPropagation()
+            alert("child is clicked")
+        })
+        document.querySelector(".childContainer").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("childContainer is clicked")
+        })
+        document.querySelector(".container").addEventListener("click", (e) => {
+            alert("container is clicked")
+        })
+    </script>
+</body>
+
+</html>

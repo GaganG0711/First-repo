@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto";
+            color: white;
+        }
+
+        body {
+            background-color: #000000;
+        }
+
+        .container {
+            width: 100%;
+            border: 2px solid rgb(32, 19, 19);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            width: 80%;
+            height: 80px;
+            display: flex;
+            align-items: flex-start;
+            padding: 5px;
+            position: relative;
+            background-color: #0f0f0f;
+
+        }
+
+        .thumbnail {
+            height: 100%;
+            width: auto;
+            border-radius: 5px;
+            float: left;
+        }
+
+        .container2 {
+            margin-left: 5px;
+            width: 100%;
+        }
+
+        .container2 span {
+            color: rgb(176, 170, 170);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .container3 {
+            padding-top: 5px;
+            display: flex;
+        }
+
+        .container3 span {
+            font-size: 12px;
+        }
+
+        .title {
+            font-weight: 600;
+            width: 100%;
+            display: block;
+        }
+
+        .durationtime {
+            background-color: rgba(0, 0, 0, 0.612);
+            position: absolute;
+            left: 110px;
+            bottom: 5px;
+            font-size: 14px;
+            padding: 2px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="add" onclick="active()">add Card</button>
+    <div class="container">
+    </div>
+
+    <script>
+        function createCard(thumbnail, title, cName, views, monthsOld, duration,) {
+            let cnt = document.querySelector(".container")
+            let card = document.createElement("div")
+            card.classList.add("card")
+            cnt.appendChild(card)
+
+            let thumbnailimg = document.createElement("img")
+            thumbnailimg.src = "thumbnail.jpg"
+            thumbnailimg.alt = "Example image";
+            thumbnailimg.classList.add("thumbnail")
+            card.appendChild(thumbnailimg)
+
+            //info div
+            let cnt2 = document.createElement("div")
+            cnt2.classList.add("container2")
+            card.appendChild(cnt2)
+
+            let titletext = document.createElement("h3")
+            titletext.textContent = `${title}`;
+            titletext.classList.add("title")
+            cnt2.appendChild(titletext)
+
+            let channalname = document.createElement("span");   // create a <p> element
+            channalname.textContent = `${cName}`;        // set the text
+            channalname.classList.add("channalname")
+            cnt2.appendChild(channalname);
+
+            let cnt3 = document.createElement("div")
+            cnt3.classList.add("container3")
+            cnt2.appendChild(cnt3)
+
+            let viewscount = document.createElement("span")
+            viewscount.innerText = `${views} - `
+            cnt3.appendChild(viewscount)
+
+            let uploaddate = document.createElement("span")
+            uploaddate.innerText = `${monthsOld} months`;
+            cnt3.appendChild(uploaddate)
+
+            let durationtime = document.createElement("span")
+            durationtime.classList.add("durationtime")
+            durationtime.innerText = `${duration}`;
+            card.appendChild(durationtime)
+        }
+        createCard("thumbnail.jpg", "Introduction to Backend | Sigma WebDev #1", "CodeWithHarry", 20000, 5, "31:22")
+        function active() {
+            createCard("thumbnail.jpg", "Introduction to Backend | Sigma WebDev #1", "CodeWithHarry", 20000, 5, "31:22")
+        }
+    </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
+<!-- thumbnail url -->
+<!-- https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDVLIUfmrskNAha1yNa-7ygsEeNEA -->
