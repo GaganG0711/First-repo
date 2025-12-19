@@ -1,0 +1,71 @@
+    <!-- create a hacking simulator which has green bg and it show these messages with random delay of 1 to 7 seconds
+    Initializing Hacking...
+    Reading your Files...
+    password Files Detected...
+    Sending all Passwords and personal files to server...
+    Cleaning up...
+    The three dot must blink so that it looks like a real terminal
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: green;
+        }
+        button{
+            font-size: larger;
+            background-color: cadetblue;
+        }
+        .blink{
+            animation: blink 0.7s steps(1) infinite;
+        }
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button onclick="main(randomDelay)">Start </button>
+    <script>
+        function randomDelay() {
+            return Math.ceil(Math.random() *7000)
+        }
+        async function delay(msg, time) {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    let h3 = document.createElement("h3")
+
+                    let text = document.createTextNode(msg)          
+                    let dots = document.createElement("span")
+                    dots.innerText = "  . . ."
+                    dots.classList.add("blink")
+                    
+                    h3.append(text)
+                    h3.append(dots)
+
+                    document.body.append(h3)
+
+                    console.log(msg)
+                    console.log(time)
+                    resolve()
+                }, time);
+            })
+        }
+
+        async function main(randomDelay) {           
+            await delay("Initializing Hacking", randomDelay())
+            await delay("Reading your Files",randomDelay())
+            await delay("password Files Detected", randomDelay())
+            await delay("Sending all Passwords and personal files to server", randomDelay())
+            await delay("Cleaning up", randomDelay())        
+        }
+    </script>
+</body>
+</html>
