@@ -1,0 +1,31 @@
+
+.svg-width{
+    width: 24px;
+    height: 24px;
+}
+
+.border{
+    /* border: 1px solid white; */
+    border-radius: 5px;
+}
+
+.base-color{
+    background-color: #292929;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.items-align{
+    align-items: center;
+}
+
+.invert{
+    filter: invert(1);
+}
+
