@@ -4,9 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
     <title>Spotify-Clone</title>
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://open.spotifycdn.com/cdn/images/favicon16.0f31d6ea.png">
 </head>
 
 <body>
@@ -17,7 +24,7 @@
                     <img src="./svg/logo.svg" class="invert" width="32px" alt="">
                 </a>
             </div>
-            <div class="searchbar p-inline" style="display: inline-flex;">
+            <div class="searchbar flex">
                 <div class="home base-color">
                     <button class="homebtn">
                         <img src="./svg/home.svg" class="invert svg-width" alt="">
@@ -38,7 +45,7 @@
                     </form>
                 </div>
             </div>
-            <div class="empty"></div>
+            <!-- <div class="empty"></div> -->
             <div class="top-right flex items-align justify-center">
                 <div class="top-right-1">
                     <div>Premium</div>
@@ -92,7 +99,7 @@
                         </section>
                     </div>
                 </div>
-                <div class="flex" style="min-width: 0; flex: 0 1 auto;  margin:16px; z-index: 2;"></div>
+                <div class="flex" style="min-width: 0; flex: 0 1 auto; z-index: 2;"></div>
 
                 <div class="left-part-2">
                     <div class="left-part-2-cnt">
@@ -113,7 +120,6 @@
                             rel="noopener"><span>Cookies</span></a>
                     </div>
                     <div><button><img src="./svg/globe.svg" class="invert" alt=""><span>English</span></button></div>
-
                 </div>
             </div>
             <div class="right border">
@@ -123,43 +129,19 @@
                             <h2>Trending Songs</h2>
                             <a href=""><span>Show all</span></a>
                         </div>
-                        <div class="card-cnt trending-card-cnt">
-                            <div class="card trending-card">
+                        <div class="card-cnt trending-card-cnt" id="songContainer">
+                            <!-- <div class="card trending-card">
                                 <div class="img-cnt">
-                                    <img src="./image/ab67616d00001e02f1d982bdf924dd4015ddf475.jpeg" alt="">
+                                    <img src="./image/THE BENJO BEAT.jpg" alt="">
                                     <div class="play-icon">
-                                        <img src="./svg/Playbtn.svg" alt="">
+                                        <i class="playbtn fa-solid fa-play"></i>
                                     </div>
                                 </div>
                                 <div class="info-cnt">
-                                    <span>Dhurandher The Revenge - Aari Aari</span>
-                                    <span>Shashwat Sachdev, Bombay Rockers, Irshad Kamil, Khan Saab </span>
+                                    <span>The Banjo Beat</span>
+                                    <span>Ricky </span>
                                 </div>
-                            </div>
-                            <div class="card trending-card">
-                                <div class="img-cnt">
-                                    <img src="./image/ab67616d00001e02f1d982bdf924dd4015ddf475.jpeg" alt="">
-                                    <div class="play-icon">
-                                        <img src="./svg/Playbtn.svg" alt="">
-                                    </div>
-                                </div>
-                                <div class="info-cnt">
-                                    <span>Dhurandher The Revenge - Aari Aari</span>
-                                    <span>Shashwat Sachdev, Bombay Rockers, Irshad Kamil, Khan Saab</span>
-                                </div>
-                            </div>
-                            <div class="card trending-card">
-                                <div class="img-cnt">
-                                    <img src="./image/ab67616d00001e02f1d982bdf924dd4015ddf475.jpeg" alt="">
-                                    <div class="play-icon">
-                                        <img src="./svg/Playbtn.svg" alt="">
-                                    </div>
-                                </div>
-                                <div class="info-cnt">
-                                    <span>Dhurandher The Revenge - Aari Aari</span>
-                                    <span>Shashwat Sachdev, Bombay Rockers, Irshad Kamil, Khan Saab</span>
-                                </div>
-                            </div>
+                            </div> -->
                         </div>
                     </section>
                     <section class="artists">
@@ -172,7 +154,7 @@
                                 <div class="img-cnt">
                                     <img src="./image/artist.jpeg" alt="">
                                     <div class="play-icon">
-                                        <img src="./svg/Playbtn.svg" alt="">
+                                        <i class="playbtn fa-solid fa-play"></i>
                                     </div>
                                 </div>
                                 <div class="info-cnt">
@@ -192,7 +174,7 @@
                                 <div class="img-cnt">
                                     <img src="./image/album.jpeg" alt="">
                                     <div class="play-icon">
-                                        <img src="./svg/Playbtn.svg" alt="">
+                                        <i class="playbtn fa-solid fa-play"></i>
                                     </div>
                                 </div>
                                 <div class="info-cnt">
@@ -212,7 +194,7 @@
                                 <div class="img-cnt">
                                     <img src="./image/featured charts.jpg" alt="">
                                     <div class="play-icon">
-                                        <img src="./svg/Playbtn.svg" alt="">
+                                        <i class="playbtn fa-solid fa-play"></i>
                                     </div>
                                 </div>
                                 <div class="info-cnt">
@@ -220,17 +202,144 @@
                                     <span>Shashwat Sachdev, Bombay Rockers, Irshad Kamil, Khan Saab </span>
                                 </div>
                             </div>
+                        </div>
+                </div>
+                </section>
+                <div class="right-cnt-2">
+                    <hr>
+                    <div class="right-cnt-2-cnt">
+                        <div class="right-cnt-2-cnt-parts">
+                            <!-- Column 1 -->
+                            <div>
+                                <ul>
+                                    <p>Company</p>
+                                    <a href="https://www.spotify.com/in-en/about-us/contact/"><span>About</span></a>
+                                    <a href="https://www.lifeatspotify.com/"><span>Jobs</span></a>
+                                    <a href="https://newsroom.spotify.com/"><span>For the Record</span></a>
+                                </ul>
+                            </div>
+
+                            <!-- Column 2 -->
+                            <div>
+                                <ul>
+                                    <p>Communities</p>
+                                    <a href="https://artists.spotify.com/"><span>For Artists</span></a>
+                                    <a href="https://developer.spotify.com/"><span>Developers</span></a>
+                                    <a href="https://ads.spotify.com/"><span>Advertising</span></a>
+                                    <a href="https://investors.spotify.com/"><span>Investors</span></a>
+                                    <a href="https://spotifyforvendors.com/"><span>Vendors</span></a>
+                                </ul>
+                            </div>
+
+                            <!-- Column 3 -->
+                            <div>
+                                <ul>
+                                    <p>Useful links</p>
+                                    <a href="https://support.spotify.com/"><span>Support</span></a>
+                                    <a href="https://www.spotify.com/in-en/free/"><span>Free Mobile
+                                            App</span></a>
+                                    <a href="/popular-in/in"><span>Popular by Country</span></a>
+                                    <a href="https://www.spotify.com/in-en/import-music/"><span>Import your
+                                            music</span></a>
+                                </ul>
+                            </div>
+
+                            <!-- Column 4 -->
+                            <div>
+                                <ul>
+                                    <p>Spotify Plans</p>
+                                    <a href="https://www.spotify.com/in-en/premium/#ref=spotifycom_footer_lite"><span>Premium
+                                            Lite</span></a>
+                                    <a
+                                        href="https://www.spotify.com/in-en/premium/#ref=spotifycom_footer_premium_individual"><span>Premium
+                                            Standard</span></a>
+                                    <a href="https://www.spotify.com/in-en/platinum/#ref=spotifycom_footer_platinum"><span>Premium
+                                            Platinum</span></a>
+                                    <a
+                                        href="https://www.spotify.com/in-en/student/#ref=spotifycom_footer_premium_student"><span>Premium
+                                            Student</span></a>
+                                    <a href="https://www.spotify.com/in-en/free/#ref=spotifycom_footer_free"><span>Spotify
+                                            Free</span></a>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <!-- Social Icons -->
+                        <div class="right-cnt-2-cnt-parts2">
+                            <div>
+                                <a href="https://instagram.com/spotify" target="_blank" rel="noopener noreferrer">
+                                    <span>
+                                        <img src="./svg/insta.svg" alt="">
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="https://twitter.com/spotify" target="_blank" rel="noopener noreferrer">
+                                    <span>
+                                        <img src="./svg/twitter.svg" alt="">
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="https://www.facebook.com/Spotify" target="_blank" rel="noopener noreferrer">
+                                    <span>
+                                        <img src="./svg/facebook.svg" alt="">
+                                    </span>
+                                </a>
                             </div>
                         </div>
-                    </section>
-                </div>
-                <div class="right-cnt-2">
 
+                    </div>
+
+                    <hr>
+
+                    <!-- Footer Bottom -->
+                    <div>
+                        <div>
+                            <div>
+                                <span>© 2026 Spotify AB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- player -->
+        <div class="player-bar">
+
+            <div class="now-bar">
+                <img src="./image/ab67616d00001e02f1d982bdf924dd4015ddf475.jpeg" alt="">
+                <div>
+                    <div class="img-title-info">Title</div>
+                    <div class="img-des-info">Description of the song or name of singer</div>
                 </div>
             </div>
+            <div class="music-controller">
+                <div class="player">
 
+                    <div id="shuffle"><i class="player-btns fa-solid fa-shuffle"></i></div>
+                    <div id="backward"><i class="player-btns fa-solid fa-backward"></i></div>
+                    <div><i id="play" class="fa-solid fa-play"></i></div>
+                    <div id="forward"><i class="player-btns fa-solid fa-forward"></i></div>
+                    <div id="repeat"><i class="player-btns fa-solid fa-repeat"></i></div>
+                </div>
+                <div>
+                    <input type="range" name="" id="progressBar" value="0">
+                </div>
+            </div>
+            <div class="sound-controller">
+                <i class="fa-solid fa-volume-high" id="toggle-soundbtn"></i>
+                <input type="range" id="volumeBar" min="0" max="1" step="0.01" value="1">
+            </div>
         </div>
     </div>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

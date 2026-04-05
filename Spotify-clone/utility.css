@@ -1,15 +1,14 @@
-
-.svg-width{
+.svg-width {
     width: 24px;
     height: 24px;
 }
 
-.border{
+.border {
     /* border: 1px solid white; */
     border-radius: 5px;
 }
 
-.base-color{
+.base-color {
     background-color: #292929;
 }
 
@@ -17,15 +16,40 @@
     display: flex;
 }
 
-.justify-center{
+.justify-center {
     justify-content: center;
 }
 
-.items-align{
+.items-align {
     align-items: center;
 }
 
-.invert{
+.invert {
     filter: invert(1);
 }
 
+button{
+    cursor: pointer;
+}
+button:hover{
+    font-weight: 800;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 64px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0px;
+    transition: background 0.3s;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.right:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+}
